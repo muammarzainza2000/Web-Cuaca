@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <h1>Selamat Datang di Website Cuaca</h1>
+    </div>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Masukkan nama kota..." spellcheck="false">
+            <button><img src="https://cdn-icons-png.flaticon.com/512/482/482631.png" width="20px"></button>
+        </div>
+        <div class="weather">
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" class="weather-icon">
+            <div class="temp-container">
+                <h1 class="temp">22</h1>
+                <span id="unit-toggle" style="cursor:pointer">°C</span>
+            </div>
+            <h2 class="city">Makassar</h2>
+            <div class="details">
+                <div class="col">
+                    <p class="humidity">50%</p>
+                    <p>Kelembapan</p>
+                </div>
+                <div class="col">
+                    <p class="wind">15 km/h</p>
+                    <p>Kecepatan Angin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/script.js"></script>
+</body>
+</html>

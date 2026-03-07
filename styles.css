@@ -1,0 +1,54 @@
+* { margin: 0; padding: 0; font-family: 'Poppins', sans-serif; box-sizing: border-box; }
+body { background: #222; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+
+.card {
+    width: 90%; max-width: 400px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff; padding: 40px 35px; border-radius: 20px; text-align: center;
+}
+
+.temp-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.unit {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 5px;
+    text-decoration: underline;
+    color: #eee;
+}
+
+.search { width: 100%; display: flex; align-items: center; justify-content: space-between; transition: background 0.5s ease;}
+.search input {
+    border: 0; outline: 0; background: #ebfffc; color: #555;
+    padding: 10px 25px; height: 50px; border-radius: 30px; flex: 1; margin-right: 16px; font-size: 18px;
+}
+.search button {
+    border: 0; outline: 0; background: #ebfffc; border-radius: 50%; width: 50px; height: 50px; cursor: pointer;
+}
+
+.weather-icon { width: 150px; margin-top: 30px; }
+.temp { font-size: 60px; font-weight: 500; }
+.city { font-size: 35px; font-weight: 400; margin-top: -10px; }
+.details { display: flex; align-items: center; justify-content: space-between; padding: 0 20px; margin-top: 50px; }
+
+.background {
+    width: 90%; max-width: 400px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff; padding: 40px 35px; border-radius: 20px; text-align: center;
+    margin-right: 150px;
+}
+#unit-toggle {
+    cursor: pointer;
+    user-select: none; /* Biar teks nggak ter-highlight saat diklik cepat */
+    transition: 0.2s;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#unit-toggle:hover {
+    color: #ffeb3b; /* Berubah warna saat mouse di atasnya */
+}
